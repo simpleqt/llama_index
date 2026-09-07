@@ -334,7 +334,7 @@ class RocksetVectorStore(BasePydanticVectorStore):
             "name": rockset_vector_store_args.get("collection"),
         }
         embeddings_col = rockset_vector_store_args.get(
-            "embeddings_col", DEFAULT_EMBEDDING_KEY
+            "embedding_col", DEFAULT_EMBEDDING_KEY
         )
         if dimensions:
             collection_args["field_mapping_query"] = (
