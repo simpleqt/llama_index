@@ -329,12 +329,12 @@ def find_neighbors(  # noqa: D417
     return_full_datapoint: bool = True,
 ) -> list[MatchNeighbor]:
     """
-    Finds the k closes neighbors of each instance of embeddings.
+    Finds the k closest neighbors of each instance of embeddings.
 
     Args:
-        embedding: List of embeddings vectors.
-        k: Number of neighbors to be retrieved.
-        filter_: List of filters to apply.
+        embeddings: List of embedding vectors.
+        top_k: Number of neighbors to be retrieved.
+        filter: List of filters to apply.
 
     Returns:
         List of lists of Tuples (id, distance) for each embedding vector.
